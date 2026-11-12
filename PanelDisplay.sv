@@ -9,7 +9,6 @@ module PanelDisplay (
 
   // Διαιρέτης συχνότητας 100MHz -> 50MHz (από εκφώνηση)
   logic pxlClk;
-
   always_ff @(posedge clk) begin
     if (rst)
       pxlClk <= 1'b1;
